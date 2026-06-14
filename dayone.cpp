@@ -21,7 +21,7 @@ int main() {
         }
         s.insert(marks[i]);
     }
-    cout << "the result is" << endl;
+    cout << "the result is :" << endl;
     if (duplicate)
         cout << "YES";
     else

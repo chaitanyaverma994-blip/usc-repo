@@ -30,6 +30,4 @@ int main() {
     }
 
     cout << "NO";
-
-    return 0;
 }

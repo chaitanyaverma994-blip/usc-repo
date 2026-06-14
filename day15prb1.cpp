@@ -15,15 +15,12 @@ bool compare(string a, string b) {
     int va = countVowels(a);
     int vb = countVowels(b);
 
-    // More vowels first
     if (va != vb)
         return va > vb;
 
-    // Shorter length first
     if (a.length() != b.length())
         return a.length() < b.length();
 
-    // Lexicographically smaller first
     return a < b;
 }
 
@@ -31,8 +28,7 @@ int main() {
     int N;
     cin >> N;
 
-    string usernames[1000]; // Adjust size if needed
-
+    string usernames[1000]; 
     for (int i = 0; i < N; i++) {
         cin >> usernames[i];
     }
@@ -43,5 +39,4 @@ int main() {
         cout << usernames[i] << endl;
     }
 
-    return 0;
 }

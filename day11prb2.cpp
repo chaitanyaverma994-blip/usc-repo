@@ -16,21 +16,16 @@ int main() {
     for (int i = 0; i < N; i++) {
         cin >> name[i] >> score[i];
     }
-
-    // Bubble Sort (Stable Sorting)
-
     for (int i = 0; i < N - 1; i++) {
 
         for (int j = 0; j < N - i - 1; j++) {
 
-            if (score[j] > score[j + 1]) {
-
-                // Swap scores
+            if (score[j] > score[j + 1]) 
+            {
                 int tempScore = score[j];
                 score[j] = score[j + 1];
                 score[j + 1] = tempScore;
 
-                // Swap names
                 string tempName = name[j];
                 name[j] = name[j + 1];
                 name[j + 1] = tempName;
